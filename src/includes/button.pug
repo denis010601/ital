@@ -1,0 +1,5 @@
+mixin button(primary = true,title = 'Кнопка')
+  if primary == true
+    a.button.button__primary(href = '#')=title
+  else
+    a.button(href = '#')=title 

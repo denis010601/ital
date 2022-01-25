@@ -1,0 +1,20 @@
+
+include layout/app.pug
+  block page
+    .page(style="background:#a1a1a1; min-height:1000px; padding: 50px" )
+      
+      h1 Кнопки
+      include includes/button
+      +button(true)
+      br
+      +button(false)
+      h1 Загаловок
+      h1.title.title--h1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      h2.title.title--h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      h3.title.title--h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      h4.title.title--h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      h5.title.title--h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      h6.title.title--h6 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      h1 логотип
+      a
+        img.logo(src="img/logo.png")
