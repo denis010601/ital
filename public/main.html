@@ -6,13 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body> 
-    <header>
-      <header class="header"></header>
-      <div class="hero"></div>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__box"><img class="logo" src="img/logo.png" alt="#">
+          <nav class="nav"> 
+            <ul class="nav__list"> 
+              <li class="nav__item active">Наши проекты</li>
+              <li class="nav__item">Медиа </li>
+              <li class="nav__item">О нас</li>
+              <li class="nav__item">Контакты</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
+    <main>
+      <div class="hero swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
+            <div class="wrapper">
+              <div class="hero__box">
+                <h1 class="title title-h1 hero__title">Проектирование элитной недвижимости «под ключ»</h1>
+                <div class="hero__prime"> <span class="text">Запишитесь на бесплатную онлайн консультацию</span><a class="button button__primary" href="#">Записаться</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
+            <div class="wrapper">
+              <div class="hero__box">
+                <h1 class="title title-h1 hero__title">заголовок</h1>
+                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
+            <div class="wrapper">
+              <div class="hero__box">
+                <h1 class="title title-h1 hero__title">заголовок</h1>
+                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
+            <div class="wrapper">
+              <div class="hero__box">
+                <h1 class="title title-h1 hero__title">заголовок</h1>
+                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
+            <div class="wrapper">
+              <div class="hero__box">
+                <h1 class="title title-h1 hero__title">заголовок</h1>
+                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
+            <div class="wrapper">
+              <div class="hero__box">
+                <h1 class="title title-h1 hero__title">заголовок</h1>
+                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+    <script src="js/main.min.js"> </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.min.js"> </script>
   </body>
 </html>

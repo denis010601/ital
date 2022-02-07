@@ -1,0 +1,9 @@
+mixin slider(img, title="Заголовок", text="", name = 'Кнопка', href ='#')
+    .swiper-slide
+        img.hero__slide(src="img/slider/" +img, alt=img)
+        .wrapper
+            .hero__box
+                h1.title.title-h1.hero__title=title
+                .hero__prime 
+                    span.text=text
+                    a.button.button__primary(href = href)=name

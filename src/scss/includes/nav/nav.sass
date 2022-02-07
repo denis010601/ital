@@ -1,0 +1,27 @@
+.nav
+    width: 475px
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 110px
+        margin: 0
+        padding: 0
+        padding-left: 10px
+        list-style: none
+        color: #fff
+        font-size: 18px
+        line-height: 25px
+        font-weight: 400
+    &__item
+        margin-right: -7px
+    & .active 
+        position: relative 
+        &::before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 1px
+            background: #D8B152
+            bottom: -5px
+            left: 0

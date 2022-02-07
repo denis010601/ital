@@ -1,0 +1,2 @@
+console.log ('Привет')
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJtYWluLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImNvbnNvbGUubG9nICgn0J/RgNC40LLQtdGCJykiXSwiZmlsZSI6Im1haW4uanMifQ==

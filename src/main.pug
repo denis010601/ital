@@ -1,5 +1,26 @@
-include layout/app.pug
-  header
-    include includes/header.pug
-    .hero
-    
+include includes/button
+include includes/swiper
+include layout/app
+    header.header
+        .wrapper
+            .header__box
+                img.logo(src="img/logo.png", alt="#")
+                nav.nav 
+                    ul.nav__list 
+                        li.nav__item.active Наши проекты
+                        li.nav__item Медиа 
+                        li.nav__item О нас
+                        li.nav__item Контакты
+    main
+        .hero.swiper.hero-swiper
+            .swiper-wrapper
+                +slider('home.jpg', 'Проектирование элитной недвижимости «под ключ»', 'Запишитесь на бесплатную онлайн консультацию', 'Записаться', '#')
+                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
+                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
+                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
+                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
+                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
+            .swiper-pagination
+    include layout/script
+        script(src="js/swiper-bundle.min.js")
+        script(src="js/swiper.min.js")  
