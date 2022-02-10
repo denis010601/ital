@@ -1,0 +1,53 @@
+.burger
+    z-index: 110
+    position: fixed
+    display: block
+    top: 40px
+    right: 40px
+    width: 60px
+    height: 16px
+    background-color: transparent
+    border: none
+    border-bottom: 2px solid #d8b152
+    visibility: hidden
+    opacity: 0
+    &__checked
+        visibility: hidden
+        opacity: 0
+    &::after
+        position: absolute
+        top: 0
+        left: 0
+        content: " "
+        width: 100%
+        height: 14%
+        background: #d8b152
+       
+    &::before
+        position: absolute
+        top: 50%
+        right: 0
+        content: " "
+        width: 73.4%
+        height: 14%
+        background: #d8b152
+
+@media screen and (max-width: 1270px) 
+    .burger
+        visibility: visible
+        opacity: 1
+        &__checked
+            &:checked                
+                & ~ .nav
+                    background: #454545
+                    display: flex
+            &:checked + .burger
+                border: none
+                &::after
+                    left: 20%
+                    width: 80%
+                    transform: rotate(45deg)
+                &::before
+                    top: 0
+                    width: 80%
+                    transform: rotate(-45deg)

@@ -1,4 +1,5 @@
-mixin slider(img, title="Заголовок", text="", name = 'Кнопка', href ='#')
+include button
+mixin slider(img, title="Заголовок", text="", link, name= 'Кнопка', href ='#')
     .swiper-slide
         img.hero__slide(src="img/slider/" +img, alt=img)
         .wrapper
@@ -6,4 +7,4 @@ mixin slider(img, title="Заголовок", text="", name = 'Кнопка', hr
                 h1.title.title-h1.hero__title=title
                 .hero__prime 
                     span.text=text
-                    a.button.button__primary(href = href)=name
+                    +button(link, name, href)

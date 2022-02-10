@@ -1,0 +1,10 @@
+include button
+mixin card(img, title="Заголовок",link, name= 'Кнопка', href ='#')
+    .card(class!=attributes.class)
+        img.card__image(src="img/card/" +img, alt=img)
+        h3.title.title-h3.card__title=title
+        +button(link, name, href)(class="card__button")
+
+mixin card-photo(img,href="#")
+    a.card-photo(class!=attributes.class  href=href) 
+        img.card-photo__image(src="img/join/" +img, alt=img)  

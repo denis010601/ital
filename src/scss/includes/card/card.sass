@@ -1,0 +1,61 @@
+.card
+    position: relative
+    width: 360px
+    height: 360px
+    z-index: 5
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    &::before
+        content: " "
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(0deg, rgba(80, 61, 43, 0.7), rgba(80, 61, 43, 0.7))
+        transition: all .2s
+    &:hover::before
+        background: linear-gradient(0deg, rgba(80, 61, 43, 0.4), rgba(80, 61, 43, 0.4))
+    &__image
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: -1
+    &__title
+        transition: all .2s ease
+        color: #fff
+        z-index: 1
+        max-width: 270px
+        text-align: center
+    &__button
+        transition: all .2s ease
+        position: absolute
+        left: 50%
+        margin-left: -130px
+        z-index: 1
+        display: flex
+        opacity:  0
+    &:hover
+        cursor: pointer
+        
+        .card__button
+            display: flex
+            transform: translateY(35px)
+            opacity: 1
+        .card__title
+            transform: translateY(-45px)
+
+.card-photo
+    display: block
+    width: 260px
+    height: 262px
+    transition: all 0.2s ease
+    &__image
+        width: 100%
+        height: 100%
+    &:hover
+        transform: scale(1.01)

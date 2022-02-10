@@ -1,26 +1,37 @@
-include includes/button
-include includes/swiper
 include layout/app
-    header.header
-        .wrapper
-            .header__box
-                img.logo(src="img/logo.png", alt="#")
-                nav.nav 
-                    ul.nav__list 
-                        li.nav__item.active Наши проекты
-                        li.nav__item Медиа 
-                        li.nav__item О нас
-                        li.nav__item Контакты
-    main
-        .hero.swiper.hero-swiper
-            .swiper-wrapper
-                +slider('home.jpg', 'Проектирование элитной недвижимости «под ключ»', 'Запишитесь на бесплатную онлайн консультацию', 'Записаться', '#')
-                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
-                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
-                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
-                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
-                +slider('home.jpg', 'заголовок', 'текст', 'кнопка', '#')
-            .swiper-pagination
-    include layout/script
-        script(src="js/swiper-bundle.min.js")
-        script(src="js/swiper.min.js")  
+    body(class="main")
+        include layout/block/header
+        main
+            section.hero.swiper.hero-swiper
+                .swiper-wrapper
+                    +slider('home.jpg', 'Проектирование элитной недвижимости «под ключ»', 'Запишитесь на бесплатную онлайн консультацию',true,'Записаться', '#')
+                    +slider('kitchen.jpg', 'Лофт для холостяка', 'Запишитесь на бесплатную онлайн консультацию',true, 'Записаться', '#')
+                    +slider('bedroom.jpg', 'Современная спальня с функциональным хранением', 'апишитесь на бесплатную онлайн консультацию', true, 'Записаться', '#')
+                    +slider('playroom.jpg', 'Для детей, которые любят сами устраивать представления',  'текст', true,  'кнопка', '#')
+                    +slider('home.jpg', 'заголовок', 'текст', true, 'кнопка', '#')
+                    +slider('home.jpg', 'заголовок', 'текст', true, 'кнопка', '#')
+                .swiper-pagination
+            section.services
+                .wrapper
+                    h2.title.title-h2.services__title Наши услуги
+                    .services__box 
+                        +card('home.jpg', "Загородный дом", true, "Подробнее", "#")(class="services__card")
+                        +card('apartment.jpg', "Квартира", true, "Подробнее", "#")(class="services__card")
+                        +card('premises.jpg', "Нежилые помещения", true, "Подробнее", "#")(class="services__card")
+            section.join
+                .wrapper
+                    h2.title.title-h2.join__title Присоединяйтесь к нам в Instagram
+                    .join__box
+                        +card-photo("photo.jpg",  "#")(class="join__card")
+                        +card-photo("photo1.jpg",  "#")(class="join__card")
+                        +card-photo("photo2.jpg",  "#")(class="join__card")
+                        +card-photo("photo3.jpg",  "#")(class="join__card")
+                        +card-photo("photo4.jpg",  "#")(class="join__card")
+                        +card-photo("photo5.jpg",  "#")(class="join__card")
+                        +card-photo("photo6.jpg",  "#")(class="join__card")
+                        +card-photo("photo7.jpg",  "#")(class="join__card")
+                    +button(true,"Присоединяйтесь",  "#")(class="join__button")
+        include layout/block/footer
+        include layout/script
+            script(src="js/swiper-bundle.min.js")
+            script(src="js/swiper.min.js")  

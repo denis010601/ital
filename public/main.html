@@ -1,39 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.min.css">
+    <title>TTAL project</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
   </head>
-  <body> 
+  <body class="main">
     <header class="header">
       <div class="wrapper">
-        <div class="header__box"><img class="logo" src="img/logo.png" alt="#">
-          <nav class="nav"> 
+        <div class="header__box"><a class="header-logo" href="#"> <img class="logo" src="img/logo.png" alt="#"></a>
+          <input class="burger__checked" type="checkbox" id="burger">
+          <label class="burger" for="burger"></label>
+          <nav class="nav" id="nav">
             <ul class="nav__list"> 
-              <li class="nav__item active">Наши проекты</li>
-              <li class="nav__item">Медиа </li>
-              <li class="nav__item">О нас</li>
-              <li class="nav__item">Контакты</li>
+              <li class="nav__item active"> <a href="#">Наши проекты</a></li>
+              <li class="nav__item"> <a href="#">Медиа </a></li>
+              <li class="nav__item"> <a href="#">О нас</a></li>
+              <li class="nav__item"> <a href="#">Контакты</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
     <main>
-      <div class="hero swiper hero-swiper">
+      <section class="hero swiper hero-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
             <div class="wrapper">
               <div class="hero__box">
                 <h1 class="title title-h1 hero__title">Проектирование элитной недвижимости «под ключ»</h1>
-                <div class="hero__prime"> <span class="text">Запишитесь на бесплатную онлайн консультацию</span><a class="button button__primary" href="#">Записаться</a></div>
+                <div class="hero__prime"> <span class="text">Запишитесь на бесплатную онлайн консультацию</span><a class="button button__primary" href="#">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img class="hero__slide" src="img/slider/kitchen.jpg" alt="kitchen.jpg"/>
+            <div class="wrapper">
+              <div class="hero__box">
+                <h1 class="title title-h1 hero__title">Лофт для холостяка</h1>
+                <div class="hero__prime"> <span class="text">Запишитесь на бесплатную онлайн консультацию</span><a class="button button__primary" href="#">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img class="hero__slide" src="img/slider/bedroom.jpg" alt="bedroom.jpg"/>
+            <div class="wrapper">
+              <div class="hero__box">
+                <h1 class="title title-h1 hero__title">Современная спальня с функциональным хранением</h1>
+                <div class="hero__prime"> <span class="text">апишитесь на бесплатную онлайн консультацию</span><a class="button button__primary" href="#">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img class="hero__slide" src="img/slider/playroom.jpg" alt="playroom.jpg"/>
+            <div class="wrapper">
+              <div class="hero__box">
+                <h1 class="title title-h1 hero__title">Для детей, которые любят сами устраивать представления</h1>
+                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a>
+                </div>
               </div>
             </div>
           </div>
@@ -41,7 +72,8 @@
             <div class="wrapper">
               <div class="hero__box">
                 <h1 class="title title-h1 hero__title">заголовок</h1>
-                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
+                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a>
+                </div>
               </div>
             </div>
           </div>
@@ -49,38 +81,68 @@
             <div class="wrapper">
               <div class="hero__box">
                 <h1 class="title title-h1 hero__title">заголовок</h1>
-                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
-            <div class="wrapper">
-              <div class="hero__box">
-                <h1 class="title title-h1 hero__title">заголовок</h1>
-                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
-            <div class="wrapper">
-              <div class="hero__box">
-                <h1 class="title title-h1 hero__title">заголовок</h1>
-                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide"><img class="hero__slide" src="img/slider/home.jpg" alt="home.jpg"/>
-            <div class="wrapper">
-              <div class="hero__box">
-                <h1 class="title title-h1 hero__title">заголовок</h1>
-                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a></div>
+                <div class="hero__prime"> <span class="text">текст</span><a class="button button__primary" href="#">кнопка</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="swiper-pagination"></div>
-      </div>
+      </section>
+      <section class="services">
+        <div class="wrapper">
+          <h2 class="title title-h2 services__title">Наши услуги</h2>
+          <div class="services__box"> 
+            <div class="card services__card"><img class="card__image" src="img/card/home.jpg" alt="home.jpg"/>
+              <h3 class="title title-h3 card__title">Загородный дом</h3><a class="button button__primary card__button" href="#">Подробнее</a>
+            </div>
+            <div class="card services__card"><img class="card__image" src="img/card/apartment.jpg" alt="apartment.jpg"/>
+              <h3 class="title title-h3 card__title">Квартира</h3><a class="button button__primary card__button" href="#">Подробнее</a>
+            </div>
+            <div class="card services__card"><img class="card__image" src="img/card/premises.jpg" alt="premises.jpg"/>
+              <h3 class="title title-h3 card__title">Нежилые помещения</h3><a class="button button__primary card__button" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="join">
+        <div class="wrapper">
+          <h2 class="title title-h2 join__title">Присоединяйтесь к нам в Instagram</h2>
+          <div class="join__box"><a class="card-photo join__card" href="#"> <img class="card-photo__image" src="img/join/photo.jpg" alt="photo.jpg"/></a><a class="card-photo join__card" href="#"> <img class="card-photo__image" src="img/join/photo1.jpg" alt="photo1.jpg"/></a><a class="card-photo join__card" href="#"> <img class="card-photo__image" src="img/join/photo2.jpg" alt="photo2.jpg"/></a><a class="card-photo join__card" href="#"> <img class="card-photo__image" src="img/join/photo3.jpg" alt="photo3.jpg"/></a><a class="card-photo join__card" href="#"> <img class="card-photo__image" src="img/join/photo4.jpg" alt="photo4.jpg"/></a><a class="card-photo join__card" href="#"> <img class="card-photo__image" src="img/join/photo5.jpg" alt="photo5.jpg"/></a><a class="card-photo join__card" href="#"> <img class="card-photo__image" src="img/join/photo6.jpg" alt="photo6.jpg"/></a><a class="card-photo join__card" href="#"> <img class="card-photo__image" src="img/join/photo7.jpg" alt="photo7.jpg"/></a>
+          </div><a class="button button__primary join__button" href="#">Присоединяйтесь</a>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__box"> <a class="footer-logo"><img class="logo" src="img/logo.png" alt="logo"></a>
+          <ul class="footer__info">
+            <li class="footer-info footer__title"> 
+              <h4 class="title title-h4">Информация</h4>
+            </li>
+            <li class="footer__item"> <a class="footer-link" href="#">Загородные дома</a></li>
+            <li class="footer__item"> <a class="footer-link" href="#">Квартиры</a></li>
+            <li class="footer__item"> <a class="footer-link" href="#">Нежилые помещения</a></li>
+            <li class="footer__item"> <a class="footer-link" href="#">Медиафайлы</a></li>
+            <li class="footer__item"> <a class="footer-link" href="#">О компании</a></li>
+          </ul>
+          <ul class="footer__info">
+            <li class="footer-info footer__title">
+              <h4 class="title title-h4">Контакты</h4>
+            </li>
+            <li class="footer__item"> <img class="footer-link__image" src="img/footer/phone.svg" alt="phone"><a class="footer-link" href="tel:+79510949259">+ 7 (951) 094-92-59</a></li>
+            <li class="footer__item"> <img class="footer-link__image" src="img/footer/mail.svg" alt="mail"><a class="footer-link" href="mailto:k_d_i01@mail.ru&amp;body=привет?subject=вопрос">k_d_i01@mail.ru</a></li>
+          </ul>
+          <ul class="footer__info">
+            <li class="footer-info footer__title">    
+              <h4 class="title title-h4">Соц. cети</h4>
+            </li>
+            <li class="footer__item"> <a class="footer-link footer-link__social" href="#"><img class="footer-link__social--image" src="img/footer/facebook.svg" alt="facebook"></a><a class="footer-link footer-link__social" href="#"><img class="footer-link__social--image" src="img/footer/youtube.svg" alt="youtube"></a><a class="footer-link footer-link__social" href="#"><img class="footer-link__social--image" src="img/footer/pinterest.svg" alt="pinterest"></a><a class="footer-link footer-link__social" href="#"><img class="footer-link__social--image" src="img/footer/instagram.svg" alt="instagram"></a></li>
+          </ul>
+        </div>
+        <div class="footer__box footer__box--policial"><a class="footer-link" href="#">Политика конфиденциальности</a><a class="footer-link" href="#">designed by Linar</a></div>
+      </div>
+    </footer>
     <script src="js/main.min.js"> </script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/swiper.min.js"> </script>
