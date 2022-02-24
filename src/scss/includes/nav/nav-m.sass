@@ -1,0 +1,35 @@
+@media screen  and (max-width: 999px) 
+    .nav
+        position: fixed
+        display: flex
+        visibility: hidden
+        opacity: 0
+        flex-direction: column
+        padding-top: 60px
+        top: 0
+        right: -100%
+        max-width: 50%
+        min-width: 25%
+        height: 100%
+        &__list
+            font-size: 30px
+            flex-direction: column
+            align-items: end
+        &__item
+            border-bottom: 1px solid #fefefe
+            width: 100%
+            padding: 10px 0
+            
+            & a
+                color: #fff
+                &:hover
+                    color: #d8b152
+            &.active,
+            &:hover
+                border-bottom: 1px solid #d8b152
+                & a
+                    color: #d8b152
+                    
+                &::before
+                    display: none
+

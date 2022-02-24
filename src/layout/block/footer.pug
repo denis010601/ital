@@ -1,11 +1,13 @@
 footer.footer
     .wrapper
         .footer__box 
-            a.footer-logo
+            a.footer-logo(href="#")
                 img.logo(src="img/logo.png", alt="logo")
             ul.footer__info
                 li.footer-info.footer__title 
                     h4.title.title-h4 Информация
+                    input.dropdown-checkbox(type="checkbox"  id="dropdown")
+                    label.dropdown(for="dropdown") 
                 li.footer__item 
                     a.footer-link(href="#") Загородные дома
                 li.footer__item 

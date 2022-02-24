@@ -5,8 +5,7 @@
         color: #424242
         margin-bottom: 65px
     &__box
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-    &__card
-        margin-bottom: 40px
+        display: grid
+        column-gap: 40px
+        row-gap: 40px
+        grid-template-columns: repeat(auto-fill, minmax(300px, 360px))

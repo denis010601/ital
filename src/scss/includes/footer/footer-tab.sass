@@ -1,0 +1,60 @@
+@media screen and (max-width:999px)
+    .footer
+        &-logo
+            width: 110px
+            height: 110px
+        &__info, &__title
+            margin-bottom: 0
+            padding: 8px 0
+        &__box
+            flex-wrap: wrap
+            & ul:nth-child(1)
+                background: red
+            & ul:nth-child(2)
+                width: 100%
+                order: 3
+                & li:first-child
+                    border-top: 1px solid #D8B152
+                    border-bottom: 1px solid #D8B152
+                    
+                & li:nth-child(1n+2)
+                    display: none
+            & ul:nth-child(3)
+                padding-top: 15px
+                width: 70%
+                & li:first-child
+                    display: none
+            & ul:nth-child(4)
+                width: 100%
+                & li:first-child
+                    display: none
+        & .dropdown
+            display: block
+            width: 100%
+            height: 100%
+            position: absolute
+            bottom: 0
+            right: 0
+            &::after
+                content: " "
+                position: absolute
+                top: 26px
+                right: 6px
+                width: 2px
+                height: 10px
+                background: #fff
+            &::before
+                content: " "
+                position: absolute
+                top: 30px
+                right:  2px
+                width: 10px
+                height: 2px
+                background: #fff
+            &-checkbox
+                display: block
+                top: 0
+                right: 0
+                position: absolute
+                opacity: 0
+                visibility: 0

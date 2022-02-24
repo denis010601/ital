@@ -1,7 +1,6 @@
 include button
 mixin slider(img, title="Заголовок", text="", link, name= 'Кнопка', href ='#')
-    .swiper-slide
-        img.hero__slide(src="img/slider/" +img, alt=img)
+    .swiper-slide(style="background-image: url(img/slider/" +img)
         .wrapper
             .hero__box
                 h1.title.title-h1.hero__title=title
