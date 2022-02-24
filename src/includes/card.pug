@@ -1,6 +1,6 @@
 include button
 mixin card(img, title="Заголовок",link, name= 'Кнопка', href ='#')
-    .card(class!=attributes.class)(style="background-image: url(img/card/" +img)
+    .card(class!=attributes.class, style="background-image: url(img/card/"+img+")")
         h3.title.title-h3.card__title=title
         +button(link, name, href)(class="card__button")
 
