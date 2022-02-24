@@ -6,9 +6,9 @@
     font-size: 18px
     line-height: 25px
     &__box
-        display: flex
-        justify-content: space-between
-        padding-bottom: 39px
+        display: grid
+        gap: 73px
+        grid-template-columns: 280px 190px 210px 260px
         &--policial
             border-top: 1px solid #d8b152
             font-size: 16px
@@ -23,8 +23,8 @@
         
     &-logo
         display: block
-        width: 280px
-        height: 217px
+
+        max-height: 217px
         cursor: pointer
     &__item
         display: flex

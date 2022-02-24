@@ -5,13 +5,15 @@
     25%
         border-top-left-radius: 30%
         border-bottom-left-radius: 30%
-
+        
     100%
         border-top-left-radius: 0%
         border-bottom-left-radius: 0%
         right: 0
         visibility: visible
         opacity: 1
+        background: #454545
+        
 @keyframes burgerclose
     0%
         border-radius: 0
@@ -19,13 +21,13 @@
     25%
         border-top-left-radius: 30%
         border-bottom-left-radius: 30%
-
     100%
         border-top-left-radius: 0%
         border-bottom-left-radius: 0%
         right: 0
         visibility: visible
         opacity: 1
+        background: #454545
 .burger
     z-index: 110
     position: absolute
@@ -50,7 +52,6 @@
         width: 100%
         height: 14%
         background: #d8b152
-       
     &::before
         position: absolute
         top: 50%
@@ -59,41 +60,38 @@
         width: 73.4%
         height: 14%
         background: #d8b152
-.burger--close
-    z-index: 100
-    position: absolute
-    display: block
-    top: 27px
-    right: 38px
-    width: 60px
-    height: 14px
-    background-color: transparent
-    border: none
-    border-bottom: 2px solid #d8b152
-    visibility: hidden
-    opacity: 0
-    &__checked
+    &--close
+        z-index: 100
+        position: absolute
+        display: block
+        top: 27px
+        right: 38px
+        width: 60px
+        height: 14px
+        background-color: transparent
+        border: none
+        border-bottom: 2px solid #d8b152
         visibility: hidden
         opacity: 0
-    &::after
-        position: absolute
-        top: 0
-        left: 0
-        content: " "
-        width: 100%
-        height: 14%
-        background: #d8b152
-       
-    &::before
-        position: absolute
-        top: 50%
-        right: 0
-        content: " "
-        width: 73.4%
-        height: 14%
-        background: #d8b152
-
-
+        &__checked
+            visibility: hidden
+            opacity: 0
+        &::after
+            position: absolute
+            top: 0
+            left: 0
+            content: " "
+            width: 100%
+            height: 14%
+            background: #d8b152
+        &::before
+            position: absolute
+            top: 50%
+            right: 0
+            content: " "
+            width: 73.4%
+            height: 14%
+            background: #d8b152
 @media screen and (max-width: 999px) 
     .burger
         visibility: visible
@@ -101,8 +99,8 @@
         &__checked
             &:checked          
                 & ~ .nav
-                    background: #454545
-                    animation-duration: 1.6s
+
+                    animation-duration: 0.3s
                     animation-name: burger 
                     animation-fill-mode: both
                 & ~ .burger
@@ -118,34 +116,30 @@
                     &::after
                         height: 2px
                         transform: rotate(-45deg)
+        &--close
+            visibility: visible
+            opacity: 1
+            &__checked
+                &:checked          
+                    & ~ .nav
 
-
-
-
-
-    .burger--close
-        visibility: visible
-        opacity: 1
-        &__checked
-            &:checked          
-                & ~ .nav
-                    background: #454545
-                    animation-duration: 1.6s
-                    animation-name: burgerclose
-                    animation-direction: reverse 
-                & ~ .burger--close
-                    border-bottom: 2px solid #d8b152
-                    height: 14px
-                    &::before
-                        height: 2px
-                        width: 73.4%
-                        height: 14%
-                        top: 50%
-                        transform: rotate(0deg)
-                    &::after
-                        height: 14%
-                        height: 2px
-                        transform: rotate(0deg)
+                        animation-duration: 0.3s
+                        animation-name: burgerclose
+                        animation-direction: reverse 
+                    & ~ .burger--close
+                        border-bottom: 2px solid #d8b152
+                        height: 14px
+                        &::before
+                            height: 2px
+                            width: 73.4%
+                            height: 14%
+                            top: 50%
+                            transform: rotate(0deg)
+                        &::after
+                            height: 14%
+                            height: 2px
+                            transform: rotate(0deg)
+    
 
 
                         
