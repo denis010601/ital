@@ -1,0 +1,19 @@
+include layout/app
+    body
+        include layout/block/header
+        +header
+        main
+            section.country
+                .wrapper
+                    h2.title.title-h2 Загородные дома
+                    .grid--card
+                        +card(false, 'country.jpg', "Название", true, "#")
+                        +card(false, 'country.jpg', "Название", true, "#")
+                        +card(false, 'country.jpg', "Название", true, "#")
+                        +card(false, 'country.jpg', "Название", true, "#")
+                        +card(false, 'country.jpg', "Название", true, "#")
+                        +card(false, 'country.jpg', "Название", true, "#")
+        include layout/block/footer
+        include layout/script
+            script(src="js/swiper-bundle.min.js")
+            script(src="js/swiper.min.js")

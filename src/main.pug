@@ -1,6 +1,7 @@
 include layout/app
     body(class="main")
         include layout/block/header
+        +header(true)
         main
             section.hero.swiper.hero-swiper
                 .swiper-wrapper
@@ -13,16 +14,16 @@ include layout/app
                 .swiper-pagination
             section.services
                 .wrapper
-                    h2.title.title-h2.services__title Наши услуги
-                    .services__box 
-                        +card('home.jpg', "Загородный дом", true, "Посмотреть", "#")(class="services__card")
-                        +card('apartment.jpg', "Квартира", true, "Посмотреть", "#")(class="services__card")
-                        +card('premises.jpg', "Нежилые помещения", true, "Посмотреть", "#")(class="services__card")
-                        +card('premises.jpg', "Нежилые помещения", true, "Посмотреть", "#")(class="services__card")
+                    h2.title.title-h2 Наши услуги
+                    .grid--card
+                        +card(true, 'home.jpg', "Загородный дом",  true, "Посмотреть", "#")
+                        +card(true, 'apartment.jpg', "Квартира", true, "Посмотреть", "#")
+                        +card(true, 'premises.jpg', "Нежилые помещения", true, "Посмотреть", "#")
+                        +card(true, 'premises.jpg', "Нежилые помещения", true, "Посмотреть", "#")
             section.join
                 .wrapper
-                    h2.title.title-h2.join__title Присоединяйтесь к нам в Instagram
-                    .join__box
+                    h2.title.title-h2 Присоединяйтесь к нам в Instagram
+                    .grid--photo
                         +card-photo("photo.jpg",  "#")(class="join__card")
                         +card-photo("photo1.jpg",  "#")(class="join__card")
                         +card-photo("photo2.jpg",  "#")(class="join__card")

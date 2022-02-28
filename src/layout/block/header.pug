@@ -1,9 +1,12 @@
-block header
+mixin header(main)
     header.header
         .wrapper
             .header__box
                 a.header-logo(href="#") 
-                    img.logo(src="img/logo.png", alt="#")
+                    if main == true
+                        img.logo(src="img/logo.png", alt="#")
+                    else
+                        img.logo(src="img/logo-dark.png", alt="#")
                 input.burger__checked(type="checkbox"  id="burger") 
                 input.burger--close__checked(type="checkbox"  id="burgerclose") 
                 label.burger(for="burger")

@@ -1,0 +1,16 @@
+include layout/app
+    body
+        include layout/block/header
+        +header
+        main
+            section.media
+                .wrapper
+                    h2.title.title-h2 Медиафайлы
+                    .grid--card
+                        +card(true, 'reward.jpg', "Награды", true, "Посмотреть", "#")
+                        +card(true, 'public.jpg', "Публикации", true, "Посмотреть", "#")
+                        +card(true, 'review.jpg', "Отзывы", true, "Посмотреть", "#")
+        include layout/block/footer
+        include layout/script
+            script(src="js/swiper-bundle.min.js")
+            script(src="js/swiper.min.js")

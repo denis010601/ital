@@ -1,8 +1,12 @@
 include button
-mixin card(img, title="Заголовок",link, name= 'Кнопка', href ='#')
-    .card(class!=attributes.class, style="background-image: url(img/card/"+img+")")
-        h3.title.title-h3.card__title=title
-        +button(link, name, href)(class="card__button")
+mixin card(button, img, title="Заголовок", link, name= 'Кнопка', href ='#')
+    if button == true
+        .card(class!=attributes.class, style="background-image: url(img/card/"+img+")")
+            h3.title.title-h3.card__title=title
+            +button(link, name, href)(class="card__button")
+    else 
+        a.card(class!=attributes.class,href=href, style="background-image: url(img/card/"+img+")")
+            h3.title.title-h3.card__title=title
 
 mixin card-photo(img,href="#")
     a.card-photo(class!=attributes.class  href=href) 

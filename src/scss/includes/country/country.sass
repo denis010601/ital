@@ -1,0 +1,13 @@
+.country
+    padding-bottom: 60px
+    .card
+        &__title
+            display: none
+        &::before
+            background: transparent
+        &:hover::before
+            background: linear-gradient(0deg, rgba(80, 61, 43, 0.7), rgba(80, 61, 43, 0.7))
+        &:hover
+            .card__title
+                display: block
+                transform: none
